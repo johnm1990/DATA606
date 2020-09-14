@@ -1,8 +1,23 @@
 ---
 title: "Chapter 3 - Probability"
-author: "John Mazon"
-output: pdf_document
+author: 'John Mazon'
+output:
+  pdf_document:
+    extra_dependencies:
+    - geometry
+    - multicol
+    - multirow
+  html_document:
+    df_print: paged
+  word_document: default
 ---
+install.packages('tinytex')
+tinytex::install_tinytex()
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 
 **Dice rolls.** (3.6, p. 92) If you roll a pair of fair dice, what is the probability of
 
